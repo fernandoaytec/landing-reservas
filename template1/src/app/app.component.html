@@ -22,8 +22,8 @@
 <!--Second section-->
 <div class="max-w-screen-lg m-auto mt-11">
   <div class="grid grid-cols-12 mx-4 gap-x-10 mb-16">
-    <div class="col-span-6 w-full  font-bold text-primary text-2xl leading-7">Así puedes utilizar <img
-        class="inline-flex mr-20" src="/assets/LOGO-reservas.svg"> para facilitarle
+    <div class="col-span-6 w-full  font-bold text-primary text-[2rem] leading-9">Así puedes utilizar <img
+        class="inline-flex" src="/assets/LOGO-reservas.svg"> para facilitarle
       la vida a tus vecinos</div>
     <div class="col-span-6 w-full  text-primary text-base">
       <p class="font-medium text-primary">Cada vez son más los ayuntamientos que gestionan sus reservas de manera
@@ -69,13 +69,13 @@
 <!--Third section-->
 <div class="bg-[#E7EFEF] flex h-[42.313rem]">
   <div class="max-w-screen-lg m-auto mt-11  ">
-    <div class="grid grid-cols-12 mx-4 gap-x-10  mt-22 mb-28 h-full  h-[453px]">
+    <div class="grid grid-cols-12 mx-4 gap-x-10  mt-22 mb-28 h-full  h-[28.313rem]">
       <div class="col-span-6 w-full   font-bold text-primary text-2xl flex flex-column ">
         <!-- <image-slider [slides]="slides"></image-slider> -->
 
         <div id="id-carousel" class="relative" data-carousel="static">
           <!-- Carousel wrapper -->
-          <div class="relative h-[453px] w-[476px] overflow-hidden rounded-lg md:h-96">
+          <div class="relative h-[28.313rem] w-[29.75rem] overflow-hidden rounded-lg md:h-96">
             <!-- Item 1 -->
             <div *ngFor="let item of slides;  let i = index">
               <div class="hidden duration-1000 ease-in-out " data-carousel-item>
@@ -158,33 +158,42 @@
 
 
 
-<div id="controls-carousel" class="relative " data-carousel="slide">
+<div id="controls-carousel" class="relative  " data-carousel="static">
   <!-- Carousel wrapper -->
-  <div class="m-auto relative rounded-lg md:h-96 h-[200px] -mt-12">
+  <div class="m-auto relative overflow-hidden  h-[12.2rem] lg:-mt-12">
     <!-- Item 1 -->
-    <div class="hidden duration-1000   " data-carousel-item>
+    <div class="hidden duration-1000 md:inline-flex" data-carousel-item>
       <!--1.1 Bloque-->
-      <div class="absolute rounded-lg max-w-[460px] bg-white shadow-lg h-48 ">
-        <div class="text-primary mx-9 my-6 ">
-          <p class=" font-medium leading-5 ">«Lorem ipsum dolor sit amet, consectetuerff adipiscing elit. Aenean commodo
+
+      <div [ngClass]="{'absolute w-1/3 right-0': lg,'hidden': md}">
+        <div class="text-primary rounded-lg  bg-white shadow-lg mx-8 px-9 py-6">
+          <p class=" font-medium leading-5 ">1«Lorem ipsum dolor sit amet, consectetuerff adipiscing elit. Aenean
+            commodo
             ligula eget dolor. Cum et magnis dis parturient montes.»</p>
           <p class="mt-9 font-extrabold ">Persona con Nombre Apellidos</p>
           <p class="font-medium ">Alcaldesa de Villahermosa</p>
         </div>
       </div>
+
+
       <!--1.2 Bloque-->
-      <div class="absolute  rounded-lg mx-auto w-[460px] inset-0 bg-white shadow-lg h-48">
-        <div class="text-primary mx-9 my-6 ">
-          <p class=" font-medium leading-5 ">«Lorem ipsum dolor sit amet, consectetuerff adipiscing elit. Aenean commodo
+
+      <div [ngClass]="{'hidden':sm,'absolute w-1/2 mx-auto left-0  ': md,'absolute  w-1/3 mx-auto inset-x-0 ': lg}">
+        <div class="text-primary rounded-lg  bg-white shadow-lg mx-8 px-9 py-6 ">
+          <p class=" font-medium leading-5 ">2«Lorem ipsum dolor sit amet, consectetuerff adipiscing elit. Aenean
+            commodo
             ligula eget dolor. Cum et magnis dis parturient montes.»</p>
           <p class="mt-9 font-extrabold ">Persona con Nombre Apellidos</p>
           <p class="font-medium ">Alcaldesa de Villahermosa</p>
         </div>
       </div>
+
+
       <!--1.3 Bloque-->
-      <div class="absolute  rounded-lg w-[460px] right-0 bg-white shadow-lg h-48">
-        <div class="text-primary mx-9 my-6 ">
-          <p class=" font-medium leading-5 ">«Lorem ipsum dolor sit amet, consectetuerff adipiscing elit. Aenean commodo
+      <div [ngClass]="{'absolute w-full': sm,'absolute w-1/2  right-0': md,'absolute w-1/3': lg,'hidden': sm}">
+        <div class="text-primary rounded-lg  bg-white shadow-lg mx-8 px-9 py-6 ">
+          <p class=" font-medium leading-5 ">3«Lorem ipsum dolor sit amet, consectetuerff adipiscing elit. Aenean
+            commodo
             ligula eget dolor. Cum et magnis dis parturient montes.»</p>
           <p class="mt-9 font-extrabold ">Persona con Nombre Apellidos</p>
           <p class="font-medium ">Alcaldesa de Villahermosa</p>
@@ -192,89 +201,122 @@
       </div>
     </div>
     <!-- Item 2 -->
-    <div class="hidden duration-1000   " data-carousel-item>
-      <!--1.1 Bloque-->
-      <div class="absolute  rounded-lg w-[460px] bg-white shadow-lg h-48 ">
-        <div class="text-primary mx-9 my-6 ">
-          <p class=" font-medium leading-5 ">«Lorem ipsum dolor sit amet, consectetuerff adipiscing elit. Aenean commodo
-            ligula eget dolor. Cum et magnis dis parturient montes.»</p>
-          <p class="mt-9 font-extrabold ">Persona con Nombre Apellidos</p>
-          <p class="font-medium ">Alcaldesa de Villahermosa</p>
-        </div>
-      </div>
-      <!--1.2 Bloque-->
-      <div class="absolute  rounded-lg mx-auto w-[460px] inset-0 bg-white shadow-lg h-48">
-        <div class="text-primary mx-9 my-6 ">
-          <p class=" font-medium leading-5 ">«Lorem ipsum dolor sit amet, consectetuerff adipiscing elit. Aenean commodo
-            ligula eget dolor. Cum et magnis dis parturient montes.»</p>
-          <p class="mt-9 font-extrabold ">Persona con Nombre Apellidos</p>
-          <p class="font-medium ">Alcaldesa de Villahermosa</p>
-        </div>
-      </div>
-      <!--1.3 Bloque-->
-      <div class="absolute  rounded-lg w-[460px] right-0 bg-white shadow-lg h-48">
-        <div class="text-primary mx-9 my-6 ">
-          <p class=" font-medium leading-5 ">«Lorem ipsum dolor sit amet, consectetuerff adipiscing elit. Aenean commodo
-            ligula eget dolor. Cum et magnis dis parturient montes.»</p>
-          <p class="mt-9 font-extrabold ">Persona con Nombre Apellidos</p>
-          <p class="font-medium ">Alcaldesa de Villahermosa</p>
-        </div>
-      </div>
-    </div>
-    <!-- Item 3 -->
-    <div class="hidden duration-1000   " data-carousel-item>
-      <!--1.1 Bloque-->
-      <div class="absolute  rounded-lg w-[460px] bg-white shadow-lg h-48 ">
-        <div class="text-primary mx-9 my-6 ">
-          <p class=" font-medium leading-5 ">«Lorem ipsum dolor sit amet, consectetuerff adipiscing elit. Aenean commodo
-            ligula eget dolor. Cum et magnis dis parturient montes.»</p>
-          <p class="mt-9 font-extrabold ">Persona con Nombre Apellidos</p>
-          <p class="font-medium ">Alcaldesa de Villahermosa</p>
-        </div>
-      </div>
-      <!--1.2 Bloque-->
-      <div class="absolute  rounded-lg mx-auto w-[460px] inset-0 bg-white shadow-lg h-48">
-        <div class="text-primary mx-9 my-6 ">
-          <p class=" font-medium leading-5 ">«Lorem ipsum dolor sit amet, consectetuerff adipiscing elit. Aenean commodo
-            ligula eget dolor. Cum et magnis dis parturient montes.»</p>
-          <p class="mt-9 font-extrabold ">Persona con Nombre Apellidos</p>
-          <p class="font-medium ">Alcaldesa de Villahermosa</p>
-        </div>
-      </div>
-      <!--1.3 Bloque-->
-      <div class="absolute  rounded-lg w-[460px] right-0 bg-white shadow-lg h-48">
-        <div class="text-primary mx-9 my-6 ">
-          <p class=" font-medium leading-5 ">«Lorem ipsum dolor sit amet, consectetuerff adipiscing elit. Aenean commodo
-            ligula eget dolor. Cum et magnis dis parturient montes.»</p>
-          <p class="mt-9 font-extrabold ">Persona con Nombre Apellidos</p>
-          <p class="font-medium ">Alcaldesa de Villahermosa</p>
-        </div>
-      </div>
-    </div>
-    <!-- Item 3 -->
+    <!-- Item 1 -->
     <div class="hidden duration-1000 " data-carousel-item>
       <!--1.1 Bloque-->
-      <div class="absolute  rounded-lg w-[460px] bg-white shadow-lg h-48 ">
-        <div class="text-primary mx-9 my-6 ">
-          <p class=" font-medium leading-5 ">«Lorem ipsum dolor sit amet, consectetuerff adipiscing elit. Aenean commodo
+
+      <div [ngClass]="{'absolute w-1/3 right-0': lg,'hidden': md}">
+        <div class="text-primary rounded-lg  bg-white shadow-lg mx-8 px-9 py-6 ">
+          <p class=" font-medium leading-5 ">1«Lorem ipsum dolor sit amet, consectetuerff adipiscing elit. Aenean
+            commodo
             ligula eget dolor. Cum et magnis dis parturient montes.»</p>
           <p class="mt-9 font-extrabold ">Persona con Nombre Apellidos</p>
           <p class="font-medium ">Alcaldesa de Villahermosa</p>
         </div>
       </div>
+
+
       <!--1.2 Bloque-->
-      <div class="absolute  rounded-lg mx-auto w-[460px] inset-0 bg-white shadow-lg h-48">
-        <div class="text-primary mx-9 my-6 ">
-          <p class=" font-medium leading-5 ">«Lorem ipsum dolor sit amet, consectetuerff adipiscing elit. Aenean commodo
+
+      <div
+        [ngClass]="{'hidden':sm,'absolute w-1/2 mx-auto left-0 bg-blue-200': md,'absolute  w-1/3 mx-auto inset-x-0 bg-red-200': lg}">
+        <div class="text-primary rounded-lg  bg-white shadow-lg mx-8 px-9 py-6 ">
+          <p class=" font-medium leading-5 ">2«Lorem ipsum dolor sit amet, consectetuerff adipiscing elit. Aenean
+            commodo
             ligula eget dolor. Cum et magnis dis parturient montes.»</p>
           <p class="mt-9 font-extrabold ">Persona con Nombre Apellidos</p>
           <p class="font-medium ">Alcaldesa de Villahermosa</p>
         </div>
       </div>
+
+
       <!--1.3 Bloque-->
-      <div class="absolute  rounded-lg w-[460px] right-0 bg-white shadow-lg h-48">
-        <div class="text-primary mx-9 my-6 ">
-          <p class=" font-medium leading-5 ">«Lorem ipsum dolor sit amet, consectetuerff adipiscing elit. Aenean commodo
+      <div [ngClass]="{'absolute w-full': sm,'absolute w-1/2 bg-red-200 right-0': md,'absolute w-1/3': lg}">
+        <div class="text-primary rounded-lg  bg-white shadow-lg mx-8 px-9 py-6 ">
+          <p class=" font-medium leading-5 ">3«Lorem ipsum dolor sit amet, consectetuerff adipiscing elit. Aenean
+            commodo
+            ligula eget dolor. Cum et magnis dis parturient montes.»</p>
+          <p class="mt-9 font-extrabold ">Persona con Nombre Apellidos</p>
+          <p class="font-medium ">Alcaldesa de Villahermosa</p>
+        </div>
+      </div>
+    </div>
+    <!-- Item 3 -->
+    <!-- Item 1 -->
+    <div class="hidden duration-1000 " data-carousel-item>
+      <!--1.1 Bloque-->
+
+      <div [ngClass]="{'absolute w-1/3 right-0': lg,'hidden': md}">
+        <div class="text-primary rounded-lg  bg-white shadow-lg mx-8 px-9 py-6 ">
+          <p class=" font-medium leading-5 ">1«Lorem ipsum dolor sit amet, consectetuerff adipiscing elit. Aenean
+            commodo
+            ligula eget dolor. Cum et magnis dis parturient montes.»</p>
+          <p class="mt-9 font-extrabold ">Persona con Nombre Apellidos</p>
+          <p class="font-medium ">Alcaldesa de Villahermosa</p>
+        </div>
+      </div>
+
+
+      <!--1.2 Bloque-->
+
+      <div
+        [ngClass]="{'hidden':sm,'absolute w-1/2 mx-auto left-0 bg-blue-200': md,'absolute  w-1/3 mx-auto inset-x-0 bg-red-200': lg}">
+        <div class="text-primary rounded-lg  bg-white shadow-lg mx-8 px-9 py-6 ">
+          <p class=" font-medium leading-5 ">2«Lorem ipsum dolor sit amet, consectetuerff adipiscing elit. Aenean
+            commodo
+            ligula eget dolor. Cum et magnis dis parturient montes.»</p>
+          <p class="mt-9 font-extrabold ">Persona con Nombre Apellidos</p>
+          <p class="font-medium ">Alcaldesa de Villahermosa</p>
+        </div>
+      </div>
+
+
+      <!--1.3 Bloque-->
+      <div [ngClass]="{'absolute w-full': sm,'absolute w-1/2 bg-red-200 right-0': md,'absolute w-1/3': lg}">
+        <div class="text-primary rounded-lg  bg-white shadow-lg mx-8 px-9 py-6 ">
+          <p class=" font-medium leading-5 ">3«Lorem ipsum dolor sit amet, consectetuerff adipiscing elit. Aenean
+            commodo
+            ligula eget dolor. Cum et magnis dis parturient montes.»</p>
+          <p class="mt-9 font-extrabold ">Persona con Nombre Apellidos</p>
+          <p class="font-medium ">Alcaldesa de Villahermosa</p>
+        </div>
+      </div>
+    </div>
+    <!-- Item 3 -->
+    <!-- Item 1 -->
+    <div class="hidden duration-1000 " data-carousel-item>
+      <!--1.1 Bloque-->
+
+      <div [ngClass]="{'absolute w-1/3 right-0': lg,'hidden': md}">
+        <div class="text-primary rounded-lg  bg-white shadow-lg mx-8 px-9 py-6 ">
+          <p class=" font-medium leading-5 ">1«Lorem ipsum dolor sit amet, consectetuerff adipiscing elit. Aenean
+            commodo
+            ligula eget dolor. Cum et magnis dis parturient montes.»</p>
+          <p class="mt-9 font-extrabold ">Persona con Nombre Apellidos</p>
+          <p class="font-medium ">Alcaldesa de Villahermosa</p>
+        </div>
+      </div>
+
+
+      <!--1.2 Bloque-->
+
+      <div
+        [ngClass]="{'hidden':sm,'absolute w-1/2 mx-auto left-0 bg-blue-200': md,'absolute  w-1/3 mx-auto inset-x-0 bg-red-200': lg}">
+        <div class="text-primary rounded-lg  bg-white shadow-lg mx-8 px-9 py-6 ">
+          <p class=" font-medium leading-5 ">2«Lorem ipsum dolor sit amet, consectetuerff adipiscing elit. Aenean
+            commodo
+            ligula eget dolor. Cum et magnis dis parturient montes.»</p>
+          <p class="mt-9 font-extrabold ">Persona con Nombre Apellidos</p>
+          <p class="font-medium ">Alcaldesa de Villahermosa</p>
+        </div>
+      </div>
+
+
+      <!--1.3 Bloque-->
+      <div [ngClass]="{'absolute w-full': sm,'absolute w-1/2 bg-red-200 right-0': md,'absolute w-1/3': lg}">
+        <div class="text-primary rounded-lg  bg-white shadow-lg mx-8 px-9 py-6 ">
+          <p class=" font-medium leading-5 ">3«Lorem ipsum dolor sit amet, consectetuerff adipiscing elit. Aenean
+            commodo
             ligula eget dolor. Cum et magnis dis parturient montes.»</p>
           <p class="mt-9 font-extrabold ">Persona con Nombre Apellidos</p>
           <p class="font-medium ">Alcaldesa de Villahermosa</p>
@@ -302,26 +344,62 @@
   <div class="grid grid-cols-12 mx-4 gap-x-10  mt-22 mb-28">
     <div class=" col-span-6 w-full ">
       <p class="mb-10 text-2xl text-primary font-bold">Te proponemos</p>
-      <mat-tab-group class=" text-primary text-base ">
+      <mat-tab-group class=" text-primary text-base mb-60">
         <mat-tab label="Personalización">
-          <p class="mt-12 font-extrabold text-3xl overflow-y-hidden">¿Y si, además, pudieran acceder a las instalaciones
+          <p class="mt-12 font-extrabold text-3xl overflow-hidden">¿Y si, además, pudieran acceder a las instalaciones
             de manera
             autónoma?
           </p>
         </mat-tab>
         <mat-tab label="Precisión">
-          <p class="mt-12 font-extrabold text-3xl">¿Y si, además, pudieran acceder a las instalaciones de manera
+          <p class="mt-12 font-extrabold text-3xl overflow-hidden">¿Y si, además, pudieran acceder a las instalaciones
+            de manera
             autónoma?
           </p>
         </mat-tab>
         <mat-tab label="Control">
-          <p class="mt-12 font-extrabold text-3xl">¿Y si, además, pudieran acceder a las instalaciones de manera
+          <p class="mt-12 font-extrabold text-3xl overflow-hidden">¿Y si, además, pudieran acceder a las instalaciones
+            de manera
             autónoma?
           </p>
         </mat-tab>
       </mat-tab-group>
     </div>
-    <div class="col-span-6 w-full   font-bold text-primary text-2xl flex flex-column ">
+    <div class="col-span-6 w-full   font-medium text-primary text-lg ">
+
+      <div> Optimiza tus recursos y amplía tus horarios mediante controles de acceso autónomos</div>
+      <div> <img src="/assets/reservas.svg"></div>
+      <div><img src="/assets/cobro-tasas.svg"></div>
+      <div> <img src="/assets/control-acceso.svg"></div>
+
+
+
     </div>
+
   </div>
+</div>
+<div class="max-w-screen-lg m-auto mt-11 ">
+  <div class="grid grid-cols-12 mx-4 gap-x-10  ">
+    <div class="col-span-6">
+      <div class="grid grid-rows-2">
+        <div class=" text-2xl text-primary font-bold bg-yellow-200 flex">¿Y cuánto cuesta todo esto?</div>
+        <div class=" bg-blue-200 ">Gratis
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+          </p>
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+            Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+        </div>
+
+
+      </div>
+    </div>
+    <div class="col-span-6 bg-red-200 h-96">
+
+    </div>
+
+
+  </div>
+
+
+
 </div>
