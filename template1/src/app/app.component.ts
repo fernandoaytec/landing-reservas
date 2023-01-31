@@ -1,5 +1,8 @@
 import { Component, ViewEncapsulation, OnInit, HostListener } from '@angular/core';
+import { FormControl, Validators } from '@angular/forms';
 import { Observable, startWith } from 'rxjs';
+import {ErrorStateMatcher} from '@angular/material/core';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -10,11 +13,20 @@ export class AppComponent implements OnInit {
   sm: boolean = false;
   md: boolean = false;
   lg:boolean = false;
+
+  emailFormControl = new FormControl('', []);
+
+  matcher = new ErrorStateMatcher();
+  title = 'template1';
+  slides = [
+    { url: '/assets/IMA-4.png',url2: '/assets/IMA-5.png'},
+    { url: '/assets/IMA-5.png',url2: '/assets/IMA-4.png'},
+    { url: '/assets/IMA-4.png',url2: '/assets/IMA-5.png'},
+    { url: '/assets/IMA-5.png',url2: '/assets/IMA-4.png'},
+  ];
   ngOnInit(): void {
     this.onResize()
   }
-
-
   @HostListener("window:resize", [])
   onResize() {
     var width = window.innerWidth;
@@ -35,14 +47,6 @@ export class AppComponent implements OnInit {
       console.log("es lg"+this.lg)
     }
   }
-  title = 'template1';
-  slides = [
-    { url: '/assets/IMA-4.png',url2: '/assets/IMA-5.png'},
-    { url: '/assets/IMA-5.png',url2: '/assets/IMA-4.png'},
-    { url: '/assets/IMA-4.png',url2: '/assets/IMA-5.png'},
-    { url: '/assets/IMA-5.png',url2: '/assets/IMA-4.png'},
-  ];
-
 
   getCurrentSlideUrl(index:number){
     return `url('${this.slides[index].url}')`;

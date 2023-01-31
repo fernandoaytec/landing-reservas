@@ -10,7 +10,8 @@ import { MatIconModule } from '@angular/material/icon';
 import { HttpClientModule } from '@angular/common/http';
 import { Modal } from 'flowbite'
 import type { ModalOptions, ModalInterface } from 'flowbite'
-
+import {MatInputModule} from '@angular/material/input';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +23,9 @@ import type { ModalOptions, ModalInterface } from 'flowbite'
     MatTabsModule,
     MatButtonModule,
     MatIconModule,
-
+    MatInputModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
