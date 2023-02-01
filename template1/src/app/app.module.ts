@@ -12,9 +12,23 @@ import { Modal } from 'flowbite'
 import type { ModalOptions, ModalInterface } from 'flowbite'
 import {MatInputModule} from '@angular/material/input';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FirstSectionComponentComponent } from './first-section-component/first-section-component.component';
+import { SecondSectionComponentComponent } from './second-section-component/second-section-component.component';
+import { ThirdSectionComponentComponent } from './third-section-component/third-section-component.component';
+import { CarouselSectionComponentComponent } from './carousel-section-component/carousel-section-component.component';
+import { FourthSectionComponentComponent } from './fourth-section-component/fourth-section-component.component';
+import { FifthSectionComponentComponent } from './fifth-section-component/fifth-section-component.component';
+import { SixthSectionComponentComponent } from './sixth-section-component/sixth-section-component.component';
 @NgModule({
   declarations: [
     AppComponent,
+    FirstSectionComponentComponent,
+    SecondSectionComponentComponent,
+    ThirdSectionComponentComponent,
+    CarouselSectionComponentComponent,
+    FourthSectionComponentComponent,
+    FifthSectionComponentComponent,
+    SixthSectionComponentComponent,
   ],
   imports: [
     BrowserModule,

@@ -26,7 +26,6 @@
   cursor: pointer;
 
 }
-
 .leftArrow {
   position: absolute;
   top: 48%;
@@ -37,7 +36,6 @@
   z-index: 1;
   cursor: pointer;
 }
-
 .slider {
   position: relative;
   height: 100%;
@@ -71,15 +69,29 @@
  .mat-tab-header, .mat-tab-nav-bar {
   border-bottom: 0;
 }
-.html{
-  font-family: 'Albert Sans', sans-serif !important;
-  background: #DCDCDC
-}
 .mat-tab-group{
   font-family: 'Albert Sans', sans-serif
-
 }
 #seccion1{
   background: rgb(255,255,255);
   background: linear-gradient(0deg, rgba(255,255,255,1) 25%, rgba(0,208,205,1) 25%, rgba(0,208,205,1) 75%, rgba(255,255,255,1) 75%);
+}
+.mat-form-field-appearance-legacy .mat-form-field-underline {
+  height: 0px !important
+}
+.mat-form-field-underline{
+  visibility:hidden
+}
+.mat-form-field-wrapper{
+
+  padding-bottom: 0px !important
+
+
+}
+.mat-form-field-infix{
+
+  border-top-width: 0px !important;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+
 }

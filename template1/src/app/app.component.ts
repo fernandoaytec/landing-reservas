@@ -1,4 +1,4 @@
-import { Component, ViewEncapsulation, OnInit, HostListener } from '@angular/core';
+import { Component, ViewEncapsulation, OnInit, HostListener, OnChanges, SimpleChanges, AfterViewInit } from '@angular/core';
 import { FormControl, Validators } from '@angular/forms';
 import { Observable, startWith } from 'rxjs';
 import {ErrorStateMatcher} from '@angular/material/core';
@@ -9,51 +9,6 @@ import {ErrorStateMatcher} from '@angular/material/core';
   styleUrls: ['./app.component.scss'],
   encapsulation: ViewEncapsulation.None
 })
-export class AppComponent implements OnInit {
-  sm: boolean = false;
-  md: boolean = false;
-  lg:boolean = false;
-
-  emailFormControl = new FormControl('', []);
-
-  matcher = new ErrorStateMatcher();
-  title = 'template1';
-  slides = [
-    { url: '/assets/IMA-4.png',url2: '/assets/IMA-5.png'},
-    { url: '/assets/IMA-5.png',url2: '/assets/IMA-4.png'},
-    { url: '/assets/IMA-4.png',url2: '/assets/IMA-5.png'},
-    { url: '/assets/IMA-5.png',url2: '/assets/IMA-4.png'},
-  ];
-  ngOnInit(): void {
-    this.onResize()
-  }
-  @HostListener("window:resize", [])
-  onResize() {
-    var width = window.innerWidth;
-    if(width<768){
-      console.log("movil "+this.sm)
-      this.sm = true
-      this.md = false
-      this.lg = false
-    }else if(width > 768 && width<1024){
-      this.sm = false
-      this.md = true
-      this.lg = false
-      console.log("es tablet "+this.md)
-    }else{
-      this.sm = false
-      this.md = false
-      this.lg = true
-      console.log("es lg"+this.lg)
-    }
-  }
-
-  getCurrentSlideUrl(index:number){
-    return `url('${this.slides[index].url}')`;
-  }
-  getCurrentSlideUrl2(index:number){
-    return `url('${this.slides[index].url2}')`;
-  }
-
+export class AppComponent  {
 
 }
