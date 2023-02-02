@@ -33,6 +33,16 @@ module.exports = {
       },
       margin: {
         '22': '5.25rem',
+      },
+      letterSpacing: {
+        tightest: '-.075em',
+        tighter: '-.05em',
+        tight: '-.025em',
+        normal: '0',
+        wide: '.02em',
+        wider: '.05em',
+        widest: '.1em',
+        widest: '.25em',
       }
     },
   },
