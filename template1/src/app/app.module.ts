@@ -19,6 +19,8 @@ import { CarouselSectionComponentComponent } from './carousel-section-component/
 import { FourthSectionComponentComponent } from './fourth-section-component/fourth-section-component.component';
 import { FifthSectionComponentComponent } from './fifth-section-component/fifth-section-component.component';
 import { SixthSectionComponentComponent } from './sixth-section-component/sixth-section-component.component';
+import { EighthSectionComponentComponent } from './eighth-section-component/eighth-section-component.component';
+import { SeventhSectionComponentComponent } from './seventh-section-component/seventh-section-component.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,6 +31,8 @@ import { SixthSectionComponentComponent } from './sixth-section-component/sixth-
     FourthSectionComponentComponent,
     FifthSectionComponentComponent,
     SixthSectionComponentComponent,
+    EighthSectionComponentComponent,
+    SeventhSectionComponentComponent,
   ],
   imports: [
     BrowserModule,
