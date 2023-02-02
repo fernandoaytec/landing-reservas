@@ -25,7 +25,7 @@ module.exports = {
         '70': '17.375rem'
       },
       fontFamily: {
-      'gentona': ['Gentona']
+        gentona: ['gentona']
       },
       colors: {
         'secondary': '#B9D20A',
