@@ -6,10 +6,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ThirdSectionComponentComponent implements OnInit {
   slides = [
-    { url: '/assets/IMA-4.png',url2: '/assets/IMA-5.png'},
-    { url: '/assets/IMA-5.png',url2: '/assets/IMA-4.png'},
-    { url: '/assets/IMA-4.png',url2: '/assets/IMA-5.png'},
-    { url: '/assets/IMA-5.png',url2: '/assets/IMA-4.png'},
+    { url: '/assets/images/IMA-4.png',url2: '/assets/images/IMA-5.png'},
+    { url: '/assets/images/IMA-5.png',url2: '/assets/images/IMA-4.png'},
+    { url: '/assets/images/IMA-4.png',url2: '/assets/images/IMA-5.png'},
+    { url: '/assets/images/IMA-5.png',url2: '/assets/images/IMA-4.png'},
   ];
   constructor() { }
 

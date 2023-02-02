@@ -3,7 +3,10 @@
 @tailwind components;
 @tailwind utilities;
 
-html, body { height: 100%; }
-body { margin: 0; font-family: 'Albert Sans', sans-serif; }
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400;500;800&display=swap');
+@layer base {
+  @font-face {
+    font-family: Gentona;
+    font-weight: 400;
+    src: url(/fonts/Gentona-Complete/GentonaMedium.otf) format("otf");
+  }
+}
