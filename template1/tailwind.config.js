@@ -29,7 +29,8 @@ module.exports = {
       },
       colors: {
         'secondary': '#B9D20A',
-        'primary':  '#000563'
+        'primary':  '#000563',
+        'tertiary': '#00D0CD'
       },
       margin: {
         '22': '5.25rem',
