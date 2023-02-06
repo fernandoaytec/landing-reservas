@@ -22,7 +22,7 @@ export class SecondSectionComponentComponent implements OnInit {
       this.sm = true
       this.md = false
       this.lg = false
-    }else if(width > 768 && width<1024){
+    }else if(width >= 768 && width<1024){
       this.sm = false
       this.md = true
       this.lg = false
