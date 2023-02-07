@@ -1,12 +1,12 @@
 <!--Third section-->
-<div class="bg-[#E7EFEF] w-screen flex ">
-  <div class="max-w-screen-lg m-auto mt-11 ">
-    <div class="mx-4 gap-x-10  lg:mt-22 mb-28 h-full">
-      <div class="flex  md:order-first order-last md:col-span-12 col-span-12 w-full   font-bold text-primary text-2xl flex flex-column ">
+<div class=" flex flex-columns bg-[#E7EFEF] mx-auto ">
+  <div class=" bg-[#E7EFEF] max-w-screen-lg m-auto lg:mx-auto lg:mt-11 sm:mx-32 md:mx-10">
+    <div class="mx-4 gap-x-10  md:mt-22 mb-28 h-full">
+      <div class="flex  sm:order-first order-last sm:col-span-12 col-span-12 w-full   font-bold text-primary text-2xl flex flex-column ">
         <!-- <image-slider [slides]="slides"></image-slider> -->
 
-        <div  class="lg:flex flex-column   w-full h-full" data-carousel="static">
-          <div class="lg:order-last m-2">
+        <div class="md:flex flex-column   w-full h-full" data-carousel="static">
+          <div class="md:order-last m-2">
             <mat-tab-group >
             <mat-tab  >
               <ng-template mat-tab-label>
@@ -62,8 +62,8 @@
 
             <div *ngFor="let item of slides;  let i = index">
               <div class="absolute shidden duration-1000 ease-in-out " data-carousel-item>
-                <div class="bg-transparent  slide flex justify-center flex-column  -space-x-48">
-                  <div class="w-90  max-h-80 mix-blend-normal rounded  bg-cover"
+                <div class="bg-transparent  slide flex justify-center flex-column -space-x-48">
+                  <div class="w-90   max-h-80 mix-blend-normal rounded  bg-cover"
                     [ngStyle]="{ 'background-image': getCurrentSlideUrl(i) }">
                   </div>
                   <div class="w-70  mix-blend-normal rounded bg-cover  border-white mt-60"
