@@ -6,10 +6,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ThirdSectionComponentComponent implements OnInit {
   slides = [
-    { url: '/assets/images/IMA-4.png',url2: '/assets/images/IMA-5.png'},
-    { url: '/assets/images/IMA-5.png',url2: '/assets/images/IMA-4.png'},
-    { url: '/assets/images/IMA-4.png',url2: '/assets/images/IMA-5.png'},
-    { url: '/assets/images/IMA-5.png',url2: '/assets/images/IMA-4.png'},
+    { url: '/assets/images/imagecarousel.png'},
+    { url: '/assets/images/imagecarousel.png'},
+    { url: '/assets/images/imagecarousel.png'},
+    { url: '/assets/images/imagecarousel.png'},
   ];
   constructor() { }
 
@@ -17,8 +17,5 @@ export class ThirdSectionComponentComponent implements OnInit {
   }
   getCurrentSlideUrl(index:number){
     return `url('${this.slides[index].url}')`;
-  }
-  getCurrentSlideUrl2(index:number){
-    return `url('${this.slides[index].url2}')`;
   }
 }

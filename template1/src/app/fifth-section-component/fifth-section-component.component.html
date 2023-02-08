@@ -6,7 +6,8 @@
         <div class="text-xl text-primary font-bold  mb-[4.2rem]">¿Y cuánto cuesta todo esto?</div>
         <div class=" bg-white rounded-lg border shadow-lg text-primary">
           <div class="p-10 leading-5">
-            <p class="text-5xl font-extrabold mb-8">Gratis</p>
+            <p class="text-5xl font-extrabold mb-8 flex">Gratis<img class="ml-auto py-1"
+              src="/assets/images/star.png"></p>
             <p class="font-medium tracking-wide">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
               dolor. Aenean massa.
             </p>
@@ -25,7 +26,8 @@
       </div>
       <div class="md:col-span-6 md:mx-6 sm:mx-32 mx-8 col-span-12 bg-gray-200 rounded-lg shadow-lg border text-primary">
         <div class="p-10 text-primary leading-4">
-          <p class="text-5xl font-extrabold mb-8">Premium</p>
+          <p class="text-5xl font-extrabold mb-8 flex">Premium<img class="ml-auto py-1"
+            src="/assets/images/premium.png"></p>
           <p class="text-body-m  tracking-wide">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
             ligula eget dolor. Aenean massa. </p>
           <form class="mx-4">
@@ -36,15 +38,13 @@
               <p class="ml-2 font-medium text-primary">habitantes</p>
             </div>
             <div class="flex-columns flex items-center  mt-6">
-              <mat-form-field class="bg-white w-6">
-                <input class="h-6" type="email" matInput [formControl]="emailFormControl">
-              </mat-form-field>
+              <mat-checkbox  [formControl]="emailFormControl">
+              </mat-checkbox>
               <p class="ml-2 font-medium text-primary">Cobro de tasas</p>
             </div>
             <div class="flex-columns flex items-center mt-6">
-              <mat-form-field class="bg-white w-6">
-                <input class="h-6" type="email" matInput [formControl]="emailFormControl">
-              </mat-form-field>
+              <mat-checkbox [formControl]="emailFormControl">
+              </mat-checkbox>
               <p class="ml-2 font-medium text-primary">Control de accesos</p>
             </div>
             <hr class="mt-4  border  border-secondary">

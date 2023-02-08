@@ -22,6 +22,7 @@ import { SeventhSectionComponentComponent } from './seventh-section-component/se
 import { SixthSectionComponentComponent } from './sixth-section-component/sixth-section-component.component';
 import { ThirdSectionComponentComponent } from './third-section-component/third-section-component.component';
 import { MatNativeDateModule } from '@angular/material/core';
+import {MatCheckboxModule} from '@angular/material/checkbox';
 @NgModule({
   declarations: [
     AppComponent,
@@ -48,6 +49,7 @@ import { MatNativeDateModule } from '@angular/material/core';
     HttpClientModule,
     MatDatepickerModule,
     MatNativeDateModule,
+    MatCheckboxModule,
     MatCardModule,
   ],
   providers: [],
