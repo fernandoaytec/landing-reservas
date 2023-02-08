@@ -1,10 +1,18 @@
 <!--Third section-->
 <div class="bg-[#E7EFEF] py-20 text-primary">
-<div class="max-w-screen-lg mt-11 lg:mt-auto lg:mx-auto sm:mx-32 md:mx-10 mx-6">
-<div class="md:flex flex-column w-full h-full" data-carousel="static">
-  <div class="md:order-last m-2 lg:w-auto  sm:w-full">
+<div class="max-w-screen-lg lg:mt-auto lg:mx-auto sm:mx-32 md:mx-10 mx-6 ">
+<div class="md:grid grid-cols-2" data-carousel="static">
+  <div class="relative lg:w-[30rem] md:w-[22rem] lg:h-[32rem] md:h-[23rem] sm:h-[27rem] sm:w-[25rem] h-[22rem] w-[20rem]   m-auto overflow-hidden ">
+    <div *ngFor="let item of slides;  let i = index">
+      <div class="hidden duration-1000 ease-in-out " data-carousel-item>
+        <div class="slide bg-cover " [ngStyle]="{ 'background-image': getCurrentSlideUrl(i) }">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="sm:mt-12">
     <mat-tab-group >
-    <mat-tab  >
+    <mat-tab>
       <ng-template mat-tab-label>
         <span class="bg-transparent hover:bg-transparent"  data-carousel-slide-to="0">Personalizacion</span>
        </ng-template>
@@ -45,23 +53,17 @@
         responsables de la dependencia o servicio</p>
     </mat-tab>
   </mat-tab-group>
-  <div id="matbotonera" class="mt-4 pb-4 pl-6">
+ <!--  <div id="matbotonera" class="mt-4 pb-4 pl-6">
     <button type="button"
       class="pr-4 items-center tracking-wide py-3 px-6 rounded-full border border-transparent text-xl bg-secondary font-extrabold leading-6 text-white shadow-sm hover:bg-white hover:text-secondary hover:border-secondary ">Pruébalo
       gratis</button>
     <button type="button"
       class="ml-6 inline-flex tracking-wide items-center text-xl rounded-lg px-3 py-2  font-bold leading-4 text-secondary hover:text-primary ">Solicita
       una demo</button>
+  </div> -->
   </div>
-  </div>
-  <div class="relative w-full h-[30rem] flex  overflow-hidden rounded-lg ">
-    <div *ngFor="let item of slides;  let i = index">
-      <div class="hidden duration-1000 ease-in-out " data-carousel-item>
-        <div class=" slide bg-cover " [ngStyle]="{ 'background-image': getCurrentSlideUrl(i) }">
-        </div>
-      </div>
-    </div>
-  </div>
+
+
 </div>
 </div>
 </div>
