@@ -23,6 +23,7 @@ import { SixthSectionComponentComponent } from './sixth-section-component/sixth-
 import { ThirdSectionComponentComponent } from './third-section-component/third-section-component.component';
 import { MatNativeDateModule } from '@angular/material/core';
 import {MatCheckboxModule} from '@angular/material/checkbox';
+import {MatTooltipModule} from '@angular/material/tooltip';
 @NgModule({
   declarations: [
     AppComponent,
@@ -51,6 +52,7 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
     MatNativeDateModule,
     MatCheckboxModule,
     MatCardModule,
+    MatTooltipModule
   ],
   providers: [],
   bootstrap: [AppComponent]
