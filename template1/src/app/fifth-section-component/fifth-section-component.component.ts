@@ -11,5 +11,7 @@ export class FifthSectionComponentComponent implements OnInit {
   emailFormControl = new FormControl('', []);
   ngOnInit(): void {
   }
-
+  scroll(el: HTMLElement) {
+    el.scrollIntoView({behavior: 'smooth'});
+}
 }
