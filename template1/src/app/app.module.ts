@@ -24,6 +24,7 @@ import { ThirdSectionComponentComponent } from './third-section-component/third-
 import { MatNativeDateModule } from '@angular/material/core';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatTooltipModule} from '@angular/material/tooltip';
+import {MatTableModule} from '@angular/material/table';
 @NgModule({
   declarations: [
     AppComponent,
@@ -52,7 +53,9 @@ import {MatTooltipModule} from '@angular/material/tooltip';
     MatNativeDateModule,
     MatCheckboxModule,
     MatCardModule,
-    MatTooltipModule
+    MatTooltipModule,
+    MatTableModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

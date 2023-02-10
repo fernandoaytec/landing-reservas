@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 
+
 @Component({
   selector: 'app-sixth-section-component',
   templateUrl: './sixth-section-component.component.html',
